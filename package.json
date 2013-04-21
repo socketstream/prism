@@ -1,0 +1,24 @@
+{
+  "name": "prism",
+  "description": "Prism Realtime Server",
+  "version": "0.0.1",
+  "author": "Owen Barnes <owen@socketstream.org>",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "connect": "2.2.2",
+    "realtime-service": "~0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "1.8.x",
+    "should": "1.2.x",
+    "async": "~0.2.6",
+    "colors": "~0.6.0-1",
+    "rtt-mock": "0.0.x"
+  },
+  "scripts": {
+    "benchmarks": "node benchmarks/run.js",
+    "build-docs": "echo \"# Prism Server API\n\" > API.md; dox --api < index.js >> API.md"
+  }
+}

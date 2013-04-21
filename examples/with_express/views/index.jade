@@ -1,0 +1,21 @@
+!!! 5
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    each tag in assetTags
+      if tag.type == 'js'
+        script(type="text/javascript", src="/#{tag.filename}")
+      else
+        link(type="text/css", rel="stylesheet", href="#/{tag.filename}")
+    title Prism Demo
+    style(media="screen", type="text/css")
+      body {
+        text-align: center;
+        height: 100%;
+        padding: 100px 30px;
+        font-family: Helvetica Neue, Arial, sans-serif;
+      }
+      p { color: #666; }
+  body
+    h1 Welcome to Prism!
+    p Open the console and type `app.api` to inspect the client-side APIs returned from the server.
