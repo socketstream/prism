@@ -14,7 +14,7 @@ SocketStream 0.4 uses Prism to offer a fully integrated developer experience.
 
 ```js
 var prism = require('prism');
-var rtt = require('rtt-engineio')();
+var rtt = require('rtt-engine.io')();
 
 var server = prism({port: 3001, transport: rtt});
 
